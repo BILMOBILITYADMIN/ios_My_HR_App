@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Workbox
+
+  Created by Ratan D K on 08/12/15.
+  Copyright © 2015 Incture Technologies. All rights reserved.
+*/
+
+"invalidCredentials" = "Invalid Username or Password";

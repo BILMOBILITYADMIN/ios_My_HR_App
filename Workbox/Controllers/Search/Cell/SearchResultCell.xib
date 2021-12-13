@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" rowHeight="76" id="ogV-Qf-drC" customClass="SearchResultCell" customModule="Workbox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ogV-Qf-drC" id="eZ4-yu-5HC">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73Z-rn-q3p">
+                        <rect key="frame" x="83" y="27" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="F7N-Kp-f5G" customClass="ActionImageView" customModule="Workbox" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="59" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="59" id="3AM-PC-Nye"/>
+                            <constraint firstAttribute="width" secondItem="F7N-Kp-f5G" secondAttribute="height" multiplier="1:1" id="DG3-E2-Oeo"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.98039215690000003" green="0.94117647059999998" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="F7N-Kp-f5G" secondAttribute="leading" id="54J-gE-6Nw"/>
+                    <constraint firstItem="73Z-rn-q3p" firstAttribute="centerY" secondItem="F7N-Kp-f5G" secondAttribute="centerY" id="8KM-jg-6aq"/>
+                    <constraint firstAttribute="topMargin" secondItem="F7N-Kp-f5G" secondAttribute="top" id="qvq-6q-k6K"/>
+                    <constraint firstItem="73Z-rn-q3p" firstAttribute="leading" secondItem="F7N-Kp-f5G" secondAttribute="trailing" constant="16" id="sMT-v9-QAi"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="F7N-Kp-f5G" secondAttribute="bottom" id="yA2-DJ-5uH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="73Z-rn-q3p" id="Zlb-f9-kti"/>
+                <outlet property="profileImageView" destination="F7N-Kp-f5G" id="UAP-CL-hXt"/>
+            </connections>
+            <point key="canvasLocation" x="120" y="317"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ProfileImage" width="64" height="64"/>
+    </resources>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PoPrCell" id="ngP-pA-oxh" customClass="PoPrCell" customModule="Workbox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ngP-pA-oxh" id="AQg-Ku-6Kj">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULV-CJ-giT">
+                        <rect key="frame" x="0.0" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuT-F1-OXJ">
+                        <rect key="frame" x="270" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ULV-CJ-giT" secondAttribute="bottom" constant="11" id="8Rf-UX-E2d"/>
+                    <constraint firstItem="ULV-CJ-giT" firstAttribute="leading" secondItem="AQg-Ku-6Kj" secondAttribute="leading" id="HUl-Wk-evw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="YuT-F1-OXJ" secondAttribute="bottom" constant="3" id="VqM-nH-Klv"/>
+                    <constraint firstItem="YuT-F1-OXJ" firstAttribute="trailing" secondItem="AQg-Ku-6Kj" secondAttribute="trailingMargin" id="g5b-jC-Ed2"/>
+                    <constraint firstItem="ULV-CJ-giT" firstAttribute="top" secondItem="AQg-Ku-6Kj" secondAttribute="top" constant="11" id="i7X-Sg-ceR"/>
+                    <constraint firstItem="YuT-F1-OXJ" firstAttribute="top" secondItem="AQg-Ku-6Kj" secondAttribute="topMargin" constant="3" id="sWL-S2-kMU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="YuT-F1-OXJ" id="lqJ-Py-tIZ"/>
+                <outlet property="titleLabel" destination="ULV-CJ-giT" id="reM-lQ-eZN"/>
+            </connections>
+            <point key="canvasLocation" x="199" y="242"/>
+        </tableViewCell>
+    </objects>
+</document>

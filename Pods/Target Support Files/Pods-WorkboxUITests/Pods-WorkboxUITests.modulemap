@@ -1,0 +1,6 @@
+framework module Pods_WorkboxUITests {
+  umbrella header "Pods-WorkboxUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

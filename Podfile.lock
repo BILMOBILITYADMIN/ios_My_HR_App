@@ -1,0 +1,63 @@
+PODS:
+  - Alamofire (3.4.0)
+  - ALTextInputBar (1.0.10)
+  - BRYXBanner (0.5.2):
+    - BRYXBanner/Core (= 0.5.2)
+  - BRYXBanner/Core (0.5.2)
+  - BSGridCollectionViewLayout (1.1.1)
+  - BSImagePicker (2.3.0):
+    - BSGridCollectionViewLayout (~> 1.1)
+    - UIImageViewModeScaleAspect (~> 1.3)
+  - BTNavigationDropdownMenu (0.3)
+  - Charts (2.2.4):
+    - Charts/Core (= 2.2.4)
+  - Charts/Core (2.2.4)
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - CVCalendar (1.2.9)
+  - EZLoadingActivity (0.8)
+  - Fabric (1.6.7)
+  - FrameAccessor (1.3.2)
+  - Kingfisher (2.4.1)
+  - ReachabilitySwift (2.3.3)
+  - SKPhotoBrowser (1.8.8)
+  - UIImageViewModeScaleAspect (1.3)
+  - VENTokenField (2.5.2):
+    - FrameAccessor (~> 1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ALTextInputBar
+  - BRYXBanner
+  - BSImagePicker (~> 2.3)
+  - BTNavigationDropdownMenu (~> 0.2)
+  - Charts
+  - Crashlytics
+  - CVCalendar
+  - EZLoadingActivity
+  - Fabric
+  - Kingfisher
+  - ReachabilitySwift
+  - SKPhotoBrowser
+  - VENTokenField
+
+SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  ALTextInputBar: 8c65c9ad4e26d872baf51194314d0937034af376
+  BRYXBanner: 5f0911d52e0a77e088f7ea7ddcdebd02afb7828a
+  BSGridCollectionViewLayout: d7304dcb35c6b3b4420c527e9f9b77ff322250f3
+  BSImagePicker: 591b28ce4994c44cbc4ac896717c1db9f9fadd18
+  BTNavigationDropdownMenu: c36d20785253699046fdd295698c24b1d1c18f53
+  Charts: a9e735c83c6d376ade20f6612dcf0ba217394a49
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  CVCalendar: 0799256e0bc3b43e83b7e86c0729ce9ff0624cb6
+  EZLoadingActivity: 6fd75a05765a4085f4b6fef6f62edf9f144b3139
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  FrameAccessor: 0f7ba6ce37be9a5d0302a27c731dca70af8d438b
+  Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
+  ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793
+  SKPhotoBrowser: 06c5ad76f3c404d16067d9cc771054759630bc53
+  UIImageViewModeScaleAspect: ec78901acfc20d3782154111a21d34390f8f71ad
+  VENTokenField: 5a19b838fb97f040e3d4c93f584b4adeaf3fc1ee
+
+COCOAPODS: 0.39.0

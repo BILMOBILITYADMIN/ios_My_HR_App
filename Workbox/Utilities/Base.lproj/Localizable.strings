@@ -1,0 +1,90 @@
+/* 
+  Localizable.strings
+  Workbox
+
+  Created by Ratan D K on 08/12/15.
+  Copyright © 2015 Incture Technologies. All rights reserved.
+*/
+
+
+//Login
+"invalidCredentials" = "Invalid Username or Password";
+
+//Timesheet approval card
+"timesheetApprovalAlertControllerTitle" = "Timesheet Approval";
+ "timesheetApprovalAlertMessage" = "Do you want to approve this request?";
+"cancelActionTitle" = "Cancel";
+
+"approveActionTitle" = "Approve";
+"errorOccured" = "An Error Occured";
+"okActionTitle" = "OK";
+
+// Manual Task Card actions
+"completeTaskAlertControllerTitle" = "Complete Task";
+"completeTaskAlertMessage" = "Do you want to complete this task?";
+"completeActionTitle" = "Complete";
+
+"closeTaskAlertControllerTitle" = "Close Task";
+"closeTaskAlertMessage" = "Do you want to close this task?";
+"closeActionTitle" = "Close";
+
+"holdTaskAlertControllerTitle" = "Hold Task";
+"holdTaskAlertMessage" = "Do you want to keep this task on Hold?";
+"holdActionTitle" = "Hold";
+
+"withdrawTaskAlertControllerTitle" = "Withdraw Task";
+"withdrawTaskAlertMessage" = "Do you want to withdraw this task?";
+"withdrawActionTitle" = "Withdraw";
+
+"reopenTaskAlertControllerTitle" = "Reopen Task";
+"reopenTaskAlertMessage" = "Do you want to reopen this task?";
+"reopenActionTitle" = "Reopen";
+
+"moreTaskAlertControllerTitle" = "More Actions";
+
+"actionNotPossible" = "Action not possible";
+"phoneNumberNotAvailable" = "Phone number not available";
+
+"emailNotAvailable" = "Email not available";
+
+"createTaskAlertControllerTitle" = "Create Task";
+"createfeedAlertControllerTitle" = "Create Feed";
+
+"confirmNavigation" = "Confirm Navigation";
+"confirmationMessage" = "All the changes will be discarded.\n Are you Sure?";
+
+//Timesheet
+"cannotSaveEmptyEntry" = "Cannot Save Empty Entry";
+"enterAllFieldsMessage" = "Please Enter all the fields";
+"takePhotoActionTitle" = "Take Photo";
+"attachFromPhotos" = "Attach from Photos";
+"attachDocuments" = "Attach Documents";
+"alert" = "Alert";
+"exitConfirmationMessage" = "Are you sure you want to exit?";
+"approveAllAlertControllerTitle" = "ApproveAll";
+
+"confirmResetAlertControllerTitle" = "Confirm Reset";
+"confirmResetMessage" = "Reset all Task entries?";
+"resetActionTitle" = "Reset";
+
+"copyFromPreviousWeekAlertControllerTitle" = "Copy previous week entries";
+"copyFromPreviousWeekAlertControllerMessage" = "Copy all task entries from previous week?";
+"copyActionTitle" = "Copy";
+"noTimesheetsToCopy" = "No timesheets to copy";
+"noTaskEnterForPreviousWeek" = "No tasks entered for previous week";
+"sessionExpired" = "Session Expired";
+"noTimesheetsToSubmit" = "No timesheets to submit";
+
+"targetHours" = "Target hours";
+"notMet" = "not met";
+
+"noTimesheetsToSave" = "No timesheets to save";
+"cannotAddTaskErrorMessageDueToLeaveError" = "Cannot add task on this day due to applied Leave";
+"cannotCopyTaskErrorMessageDueToLeaveError" =  "Could not copy some tasks due to Applied Leave";
+"cannotCopyTaskErrorMessageDueToProjectAllocationError" = "Could not copy some tasks since Project is not allocated";
+
+"sessionExpiredMessage" = "Session Expired. Please Login again";
+"bmpApprovalAlertControllerTitle" = "BMP Approval";
+"bmpApprovalAlertMessage" = "Do you want to approve this request?";
+
+"pmsApprovalAlertControllerTitle" = "PMS Approval";

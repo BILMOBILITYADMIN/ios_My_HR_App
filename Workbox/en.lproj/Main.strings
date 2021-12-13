@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "cardVC"; ObjectID = "2UH-4e-hmQ"; */
+"2UH-4e-hmQ.text" = "cardVC";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "8P3-iU-Z5Q"; */
+"8P3-iU-Z5Q.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "first"; ObjectID = "8oI-Da-4Wj"; */
+"8oI-Da-4Wj.text" = "first";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "hK2-9I-NZs"; */
+"hK2-9I-NZs.placeholder" = "password";
+
+/* Class = "UITextField"; placeholder = "email"; ObjectID = "wjf-35-3sx"; */
+"wjf-35-3sx.placeholder" = "email";

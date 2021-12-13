@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ActivityMonthCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityMonthCell" rowHeight="245" id="ZNg-fZ-8O4" customClass="ActivityMonthCell" customModule="Workbox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="245"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZNg-fZ-8O4" id="g2y-n9-y07">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="244"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Muy-aL-hkw">
+                        <rect key="frame" x="0.0" y="0.0" width="401" height="244"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="ZNg-fZ-8O4" id="ztI-8I-hff"/>
+                            <outlet property="delegate" destination="ZNg-fZ-8O4" id="jlS-4Y-sSQ"/>
+                        </connections>
+                    </tableView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Muy-aL-hkw" firstAttribute="leading" secondItem="g2y-n9-y07" secondAttribute="leading" id="2vz-GW-2dh"/>
+                    <constraint firstAttribute="trailing" secondItem="Muy-aL-hkw" secondAttribute="trailing" id="IyG-oV-O7F"/>
+                    <constraint firstItem="Muy-aL-hkw" firstAttribute="top" secondItem="g2y-n9-y07" secondAttribute="top" id="JhL-fj-F9a"/>
+                    <constraint firstAttribute="bottom" secondItem="Muy-aL-hkw" secondAttribute="bottom" id="Yk1-nr-Yof"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityTableView" destination="Muy-aL-hkw" id="hAe-48-70z"/>
+            </connections>
+            <point key="canvasLocation" x="243.5" y="307.5"/>
+        </tableViewCell>
+    </objects>
+</document>

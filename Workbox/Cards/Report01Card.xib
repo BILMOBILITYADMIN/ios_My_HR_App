@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Report01Card" rowHeight="216" id="KGk-i7-Jjw" customClass="Report01Card" customModule="Workbox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="215"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JvN-zt-aJT" customClass="BarChartView" customModule="Charts">
+                        <rect key="frame" x="8" y="8" width="314" height="200"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="n99-3e-jhT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JvN-zt-aJT" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="7Pe-4L-3m4"/>
+                    <constraint firstItem="JvN-zt-aJT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="hMb-IJ-e4Q"/>
+                    <constraint firstItem="JvN-zt-aJT" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="lRz-Bo-abm"/>
+                    <constraint firstItem="JvN-zt-aJT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qcH-fe-gTk"/>
+                </constraints>
+                <edgeInsets key="layoutMargins" top="10" left="20" bottom="8" right="20"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+            <edgeInsets key="layoutMargins" top="10" left="20" bottom="8" right="20"/>
+            <connections>
+                <outlet property="barChartView" destination="JvN-zt-aJT" id="iXT-RF-eYd"/>
+            </connections>
+            <point key="canvasLocation" x="285" y="342"/>
+        </tableViewCell>
+    </objects>
+</document>

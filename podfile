@@ -1,0 +1,29 @@
+platform :ios, '8.0'
+pod 'Alamofire'
+pod 'Kingfisher'
+pod 'ReachabilitySwift'
+pod 'SKPhotoBrowser'
+pod 'BRYXBanner'
+pod 'EZLoadingActivity'
+pod 'BTNavigationDropdownMenu', "~> 0.2"
+pod 'VENTokenField'
+pod 'ALTextInputBar'
+pod 'Charts'
+pod 'CVCalendar'
+pod "BSImagePicker", "~> 2.3"
+
+use_frameworks!
+
+target 'Workbox' do
+
+end
+
+target 'WorkboxTests' do
+
+end
+
+target 'WorkboxUITests' do
+
+end
+
+

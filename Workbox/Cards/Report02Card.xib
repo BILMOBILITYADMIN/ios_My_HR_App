@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Report02Card" rowHeight="188" id="KGk-i7-Jjw" customClass="Report02Card" customModule="Workbox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="187"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRj-fc-vrD" userLabel="LineChartView" customClass="LineChartView" customModule="Charts">
+                        <rect key="frame" x="8" y="8" width="304" height="171"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="171" id="4A9-d1-FJS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="cRj-fc-vrD" secondAttribute="leading" id="Ks0-rI-dC4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cRj-fc-vrD" secondAttribute="trailing" id="Tst-rx-zD1"/>
+                    <constraint firstAttribute="topMargin" secondItem="cRj-fc-vrD" secondAttribute="top" id="oiF-Jz-Aw4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cRj-fc-vrD" secondAttribute="bottom" id="prK-Kx-55S"/>
+                </constraints>
+                <edgeInsets key="layoutMargins" top="10" left="20" bottom="8" right="20"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="lineChartView" destination="cRj-fc-vrD" id="pGR-zo-mhb"/>
+            </connections>
+            <point key="canvasLocation" x="262" y="388"/>
+        </tableViewCell>
+    </objects>
+</document>

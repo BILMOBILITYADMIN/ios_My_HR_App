@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DocPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CW - Document Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYi-33-DW9">
+                                <rect key="frame" x="53" y="88" width="268.5" height="32.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWG-Um-yeW">
+                                <rect key="frame" x="145" y="157" width="85" height="30"/>
+                                <state key="normal" title="Picker Menu"/>
+                                <connections>
+                                    <action selector="handleImportMenuPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hXo-dd-D88"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHp-VG-Y2y">
+                                <rect key="frame" x="140" y="224" width="95" height="30"/>
+                                <state key="normal" title="Picker Screen"/>
+                                <connections>
+                                    <action selector="handleImportPickerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TvP-8K-uvo"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFP-83-u8x">
+                                <rect key="frame" x="16" y="269.5" width="343" height="152"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="qnU-9K-O1X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qHp-VG-Y2y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="24M-UC-HxQ"/>
+                            <constraint firstItem="UWG-Um-yeW" firstAttribute="top" secondItem="MYi-33-DW9" secondAttribute="bottom" constant="37" id="EoG-6o-u0l"/>
+                            <constraint firstItem="BFP-83-u8x" firstAttribute="top" secondItem="qHp-VG-Y2y" secondAttribute="bottom" constant="15" id="OoJ-cq-ePI"/>
+                            <constraint firstItem="MYi-33-DW9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="68" id="Wvr-OG-aKS"/>
+                            <constraint firstItem="qHp-VG-Y2y" firstAttribute="top" secondItem="UWG-Um-yeW" secondAttribute="bottom" constant="37" id="XJ5-dO-nky"/>
+                            <constraint firstItem="MYi-33-DW9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dCf-S2-n1X"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="BFP-83-u8x" secondAttribute="leading" id="dGG-sD-Shk"/>
+                            <constraint firstItem="UWG-Um-yeW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pJl-vi-Ipo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BFP-83-u8x" secondAttribute="trailing" id="wKL-rU-jvh"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="textView" destination="BFP-83-u8x" id="r6W-zH-H2a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277.5" y="232.5"/>
+        </scene>
+    </scenes>
+</document>
