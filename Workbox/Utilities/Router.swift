@@ -10,7 +10,10 @@ import Foundation
 import Alamofire
 
 enum Router: URLRequestConvertible {
-    static let baseURLString = ConstantServer.qaURL  // qaprodurl
+    static let baseURLString = ConstantServer.qaURL  
+    
+    
+ //   static let baseURLString = ConstantServer.prodURL
     
     case ConfigureURL(urlString: String) //No statusCode
     case LoginUser(username: String, password: String)
