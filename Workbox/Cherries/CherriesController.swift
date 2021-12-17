@@ -40,6 +40,7 @@ enum Cherries : Int {
     case Leave
     case DevelopmentConversations
     case EBAT
+    case Enominations
     
     var displayString : String {
         switch self{
@@ -59,17 +60,20 @@ enum Cherries : Int {
             return "Development Conversations"
         case .EBAT:
             return "e-BAT"
+            
+        case .Enominations :
+            return "e - Nominations for Beneficiary"
         }
     }
 }
 
-let imageNames : [String : String ] = [ "Champion Score Card" :"csc","Performance Management System":"performance","Recruitment" : "recruit","LMS":"lms","On Boarding" : "Onboarding","Leave Application" : "ic_leave","Development Conversations" : "developement_conversation" , "e-BAT" : "developement_conversation"] // # Pavan add image names here based on index of apperance
+let imageNames : [String : String ] = [ "Champion Score Card" :"csc","Performance Management System":"performance","Recruitment" : "recruit","LMS":"lms","On Boarding" : "Onboarding","Leave Application" : "ic_leave","Development Conversations" : "developement_conversation" , "e-BAT" : "developement_conversation","e - Nominations for Beneficiary":"developement_conversation"] // # Pavan add image names here based on index of apperance
 
 let refreshControl = UIRefreshControl()
 var isLoading = false
 var cherries: [Cherry]?
-var availbleCherries :[Cherries] = [.ChampionScoreCard,.PMS,.Recruitment,.LMS,.Onboarding, .Leave, .DevelopmentConversations, .EBAT]
-var cherriesFromLocal:[Cherries] = [.ChampionScoreCard,.PMS,.Recruitment,.LMS,.Onboarding, .Leave, .DevelopmentConversations ,.EBAT]
+var availbleCherries :[Cherries] = [.ChampionScoreCard,.PMS,.Recruitment,.LMS,.Onboarding, .Leave, .DevelopmentConversations, .EBAT,.Enominations]
+var cherriesFromLocal:[Cherries] = [.ChampionScoreCard,.PMS,.Recruitment,.LMS,.Onboarding, .Leave, .DevelopmentConversations ,.EBAT, .Enominations]
 
 class CherriesController: UIViewController, UINavigationControllerDelegate {
     var cherriesFromLocal:[Cherries] = []
@@ -330,6 +334,16 @@ extension CherriesController: UICollectionViewDataSource, UICollectionViewDelega
 
             navigationController?.pushViewController(webViewController, animated: true)
             break
+            
+        case .Enominations :
+            let webViewController = WebViewController()
+            webViewController.cherryName = cherriesFromLocal[indexPath.row]
+            webViewController.url = systemURL + "#/mobile/kra/target-approval"//http://hrapps.britindia.com/
+            webViewController.navTitleString = "e-Bat"
+            
+            navigationController?.pushViewController(webViewController, animated: true)
+            break
+
         }
     }
 }

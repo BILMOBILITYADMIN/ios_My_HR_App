@@ -499,6 +499,8 @@ class WebViewController: UIViewController {
 
             
             break
+            
+        case .Enominations : break
       
             
         }
