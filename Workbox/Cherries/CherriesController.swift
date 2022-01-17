@@ -336,10 +336,17 @@ extension CherriesController: UICollectionViewDataSource, UICollectionViewDelega
             break
             
         case .Enominations :
+//            let webViewController = WebViewController()
+//            webViewController.cherryName = cherriesFromLocal[indexPath.row]
+//            webViewController.url = systemURL + "#/mobile/kra/target-approval"//http://hrapps.britindia.com/
+//            webViewController.navTitleString = "e-Bat"
+            
+            
             let webViewController = WebViewController()
             webViewController.cherryName = cherriesFromLocal[indexPath.row]
-            webViewController.url = systemURL + "#/mobile/kra/target-approval"//http://hrapps.britindia.com/
-            webViewController.navTitleString = "e-Bat"
+            webViewController.url = systemURL + "#/cwapp/mynomineerequests"
+            
+            webViewController.navTitleString = "e-Nominee"
             
             navigationController?.pushViewController(webViewController, animated: true)
             break

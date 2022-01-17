@@ -26,7 +26,7 @@ class SideMenuController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
 
-    var items = [["",""],["",""],["",""],["",""],["",""],["",""]]
+    var items = [["e-Bat","Performance History"],["",""],["",""],["",""],["",""],["",""]]
     //var items = Array<String>(count: 5, repeatedValue: Array<String>(count: 6, repeatedValue: 0))
   //  var items:[[AnyObject]] = []
     var currentIndex:NSIndexPath = NSIndexPath()
@@ -158,13 +158,17 @@ extension SideMenuController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        
+        print("items >>>>\(items)  \(items[section].count)")
+        
         return items[section].count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TSLeftMenuCell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = items[indexPath.section][indexPath.row] 
+        cell.textLabel?.text = items[indexPath.section][indexPath.row]
         cell.textLabel?.textColor = UIColor.darkGrayColor()
         cell.backgroundColor = UIColor.tableViewCellBackGroundColor()
         cell.accessoryType = (currentIndex == indexPath) ? .Checkmark : .None

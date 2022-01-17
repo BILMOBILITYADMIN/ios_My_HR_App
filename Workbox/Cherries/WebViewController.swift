@@ -500,7 +500,46 @@ class WebViewController: UIViewController {
             
             break
             
-        case .Enominations : break
+        case .Enominations :
+            
+            if roles["Recruitment"] == nil
+            {
+                let alertController = UIAlertController.init(title: NSLocalizedString("errorOccured", comment: ""), message:message , preferredStyle: UIAlertControllerStyle.Alert)
+                
+                let okAction = UIAlertAction.init(title: NSLocalizedString("okActionTitle", comment: ""), style: UIAlertActionStyle.Cancel, handler: nil)
+                alertController.addAction(okAction)
+                self.presentViewController(alertController, animated: true, completion: nil)
+                return;
+                //break;
+            }
+            object = roles["Recruitment"]!
+            if( object.count != 0 )
+            {
+                if(currentMenuIndex != -1)
+                {
+                    name = object[currentMenuIndex]["name"] as! String
+                    region = object[currentMenuIndex]["region"] as! String
+                }
+                else{
+                    name = object.first!["name"] as! String
+                    region = object.first!["region"] as! String
+                }
+                hrFunction = "undefined"
+                if region == nil{
+                    region = UserDefaults.userRegion()
+                }
+                cherry = "rec"
+            }
+            else
+            {
+                name = "undefined"
+                region = UserDefaults.userRegion()
+                hrFunction = "undefined"
+                cherry = "rec"
+                
+            }
+            
+            break
       
             
         }
@@ -527,7 +566,7 @@ class WebViewController: UIViewController {
     
         }
         let roleNameCookieDict = [NSHTTPCookieName: "roleName",
-                                  NSHTTPCookieValue: nameCookieValue,
+                                  NSHTTPCookieValue: nameCookieValue, //"employee",//
                                   NSHTTPCookieDomain: cookieDomain,
                                   NSHTTPCookiePath: "/",
                                   ]
@@ -1024,6 +1063,37 @@ class WebViewController: UIViewController {
                 }
                 sideMenuController?.sectionHeader = sectionTitleArray
             }
+            
+            
+        case .Enominations :
+            
+            let object = roles!["e-BAT"] as! [NSMutableDictionary]
+            var temp = [String]()
+            
+            var sectionTitleArray: [String] = []
+            var sectionCount = 0
+            for item in object{
+                sectionTitleArray.append("\(item["name"] ?? "") - \(item["region"] ?? "")")
+                
+                switch item["name"]! as! String{
+                    
+                case "employee" : temp = ["e-BAT","Performance History", "Additional Reviewer Feedback"]
+                sideMenuController?.items[sectionCount] = temp
+                    
+                case "HRBP" : temp = ["e-BAT", "Additional Reviewer Feedback"]
+                sideMenuController?.items[sectionCount] = temp
+                    
+                case "Admin" : temp = ["Dashboard"]
+                sideMenuController?.items[sectionCount] = temp
+                    
+                default : break
+                }
+                sectionCount += 1
+            }
+            sideMenuController?.sectionHeader = sectionTitleArray
+            
+            break
+            
             
         default:
             sideMenuController?.items[0] = [""]
